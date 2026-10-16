@@ -1,0 +1,7 @@
+[build]
+builder = "RAILPACK"
+
+[deploy]
+startCommand = "beyondseo crawl https://crest.dxora.com --out /data/crest --max-pages 15 --quiet"
+cronSchedule = "0 6 * * *"
+restartPolicyType = "NEVER"
